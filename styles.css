@@ -4,12 +4,12 @@
   text-align: center;
 }
 
-html{
+html {
   height: 110%;
 }
 
 body {
-  background: linear-gradient(rgb(40, 3, 65), rgb(6, 43, 99), rgb(65, 182, 109));
+  background: linear-gradient(160deg, rgb(40, 3, 65), rgb(6, 43, 99), rgb(65, 182, 109));
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -17,7 +17,7 @@ body {
 h1 {
   margin: 25px;
   font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
+  text-shadow: 5px 0 #233129;
   font-size: 7rem;
   color: #4ECCA3;
 }
@@ -30,7 +30,7 @@ h1 {
   font-family: 'Indie Flower', cursive;
 }
 
-.dice{
+.dice {
   display: inline-block;
   text-align: center;
   width: 20%;
@@ -42,21 +42,21 @@ img {
 }
 
 
-footer{
+footer {
   text-align: center;
 }
 
-p{
+.instruction {
   margin-top: 3%;
   margin-bottom: 5%;
   width: 95%;
   color: #EEEEEE;
   font-size: 1.5rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
-.links{
+.links {
   position: absolute;
   left: 15%;
   right: 15%;
@@ -64,29 +64,84 @@ p{
   width: 70%;
 }
 
-footer a{
+footer a {
   margin: 0.5%;
 }
 
-footer img{
+footer img {
   width: 43px;
 }
 
-@media only screen and (max-width: 430px) {
-  h1{
-    font-size: 3rem;
+.btn a {
+  visibility: collapse;
+  text-decoration: none;
+  border: 3px solid #EEEEEE;
+  border-radius: 145px;
+  background: linear-gradient(rgb(211, 28, 15), rgb(119, 22, 5));
+  padding: 14px 50px;
+  font-size: 33px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3.4rem;
   }
-  p{
+
+  .instruction {
     font-size: 1.5rem;
+    visibility: collapse;
   }
-  img{
+
+  img {
     width: 120px;
   }
-  .dice{
+
+  .dice {
     margin: 5%;
     width: 33%;
   }
-  footer p{
-    font-size: 1rem;
+  .dice p{
+    font-size: 1.7rem;
+  }
+
+  .btn a {
+    visibility: visible;
+
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .instruction {
+    font-size: 1.5rem;
+    visibility: collapse;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .dice {
+    margin: 5%;
+    width: 33%;
+  }
+  .dice p{
+    font-size: 3.7rem;
+  }
+
+  .btn a {
+    visibility: visible;
+    padding: 26px 90px;
+    font-size: 65px;
+  }
+
+  footer img{
+    width: 70px;
   }
 }

@@ -12,6 +12,7 @@ body {
   background: linear-gradient(160deg, rgb(40, 3, 65), rgb(6, 43, 99), rgb(65, 182, 109));
   background-repeat: no-repeat;
   text-align: center;
+  user-select: none;
 }
 
 h1 {
@@ -109,6 +110,7 @@ footer img {
 
   .btn a {
     visibility: visible;
+    pointer-events: none;
 
   }
 }

@@ -22,8 +22,9 @@ var flag = 0;
 document.querySelector(".btn").addEventListener("click", function ()
 {
     flag = 1;
-    rollDice();
     new Audio('roll_the_dice.mp3').play();
+    document.querySelector("h1").textContent = "Rolling . . .🎲"
+    setTimeout(rollDice, 700);
 });
 if(flag == 0)
     rollDice();

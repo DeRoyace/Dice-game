@@ -38,7 +38,7 @@ h1 {
 }
 
 img {
-  width: 80%;
+  width: 70%;
   margin: 0;
 }
 
@@ -83,12 +83,24 @@ footer img {
   font-size: 33px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
+  pointer-events: none;
+}
+
+.btn-on-click{
+  text-decoration: none;
+  border: 3px solid #704747;
+  border-radius: 145px;
+  background: linear-gradient(rgb(211, 28, 15), rgb(119, 22, 5));
+  padding: 14px 50px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
 }
 
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 
   .instruction {
@@ -101,7 +113,7 @@ footer img {
   }
 
   .dice {
-    margin: 5%;
+    margin: 0;
     width: 33%;
   }
   .dice p{
@@ -115,9 +127,9 @@ footer img {
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
+@media only screen and (min-width: 601px) and (max-width: 750px) {
   h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   .instruction {
@@ -125,25 +137,30 @@ footer img {
     visibility: collapse;
   }
 
+  .container{
+    padding-bottom: 0;
+    height: 80%;
+  }
+
   img {
-    width: 100%;
+    width: 70%;
   }
 
   .dice {
-    margin: 5%;
+    margin: auto;
     width: 33%;
   }
   .dice p{
-    font-size: 3.7rem;
+    font-size: 2.5rem;
   }
 
   .btn a {
     visibility: visible;
-    padding: 26px 90px;
-    font-size: 65px;
+    padding: 16px 60px;
+    font-size: 30px;
   }
 
   footer img{
-    width: 70px;
+    width: 35px;
   }
 }

@@ -48,7 +48,7 @@ footer {
 }
 
 .instruction {
-  margin-top: 3%;
+  margin-top: 2%;
   margin-bottom: 5%;
   width: 95%;
   color: #EEEEEE;
@@ -102,6 +102,16 @@ footer img {
   color: #ffffff;
 }
 
+.copyright{
+  color: #EEEEEE;
+  position: absolute;
+  right: 10px;
+  bottom: 1%;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 @media only screen and (max-width: 600px) {
   h1 {
@@ -129,6 +139,13 @@ footer img {
     visibility: visible;
     pointer-events: none;
 
+  }
+
+  .copyright{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: -10%;
   }
 }
 
@@ -167,5 +184,21 @@ footer img {
 
   footer img{
     width: 35px;
+  }
+  .copyright{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: -10%;
+  }
+
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1200px) {
+  .copyright{
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: -10%;
   }
 }
